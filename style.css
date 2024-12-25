@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(204, 195, 195);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    width: 300px;
+    height: 350px;
+    margin-top: 80px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    overflow: hidden;
+   
+
+}
+.container .title{
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    color: blue;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 10px 10px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+}
+.container .title h2{
+    font-size: 1em;
+}
+.container .title h2::first-letter{
+    font-size: 1.2em;
+}
+.container .city-field{
+    width: 80%;
+    padding: 10px 10px;
+    
+}
+.container .city-field label{
+    font-weight: bold;
+}
+.container .city-field .input-field{
+    width: 100%;
+    height: 30px;
+    margin-top: 3px;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+}
+.container .city-field .input-field input{
+    width: 75%;
+    height: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    
+    
+}
+.city-field .input-field button{
+    width: 25%;
+    height: 100%;
+    padding: 0px 10px;
+    background: rgb(23, 27, 235);
+    color: rgb(250, 237, 237);
+    border: 2px solid blue;
+    outline: none;
+    gap: 0px;
+    cursor: pointer;
+}
+.container .info1{
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.container .info2{
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    background: rgba(245, 245, 245, 0.644);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+.overlay .loader{
+    width: 50%;
+    height: 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.overlay .loader .spam{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: blue;
+    transition: all ease-in 0.4s;
+    
+}
+@keyframes loading {
+    100%{
+        background: aliceblue;
+    }
+    
+}
+.overlay .loader .spam:nth-child(1){
+    animation:  loading linear infinite 1s;
+
+}
+.overlay .loader .spam:nth-child(2){
+    animation:  loading linear infinite 1.4s;
+
+}
+.overlay .loader .spam:nth-child(3){
+    animation:  loading linear infinite 1.8s;
+
+}
+.overlay .loader .spam:nth-child(4){
+    animation:  loading linear infinite 2s;
+
+}
+.overlay .loader .spam:nth-child(5){
+    animation:  loading linear infinite 2.4s;
+
+}
